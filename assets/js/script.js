@@ -180,7 +180,16 @@ $(document).ready(function(){
         $("#div2").hide();
         $("#div3").hide();
     })
+    /*BOTON AUTO DESTRUCCION*/ 
+    $("#btnEliminar").click(function(){
+        $("#Eliminar").hide();
+    })
 
+});
 
-
+/*NO FUNCIONÓ XD*/
+$.get("https://digimon-api.vercel.app/api/digimon", function(data, status) {
+    if(status === "success") { // Corregido: "success" estaba mal escrito
+        localStorage.setItem("digimones", JSON.stringify(data));
+    }
 });
