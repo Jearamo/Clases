@@ -168,17 +168,17 @@ $(document).ready(function(){
         numero2 = $("#numero2").val("");
         resultado = $("#resultado").text("");
     })
-    /*BOTON ESCONDER*/ 
-    $("#btnEsconder").click(function(){
-        $("#div1").hide();
-        $("#div2").hide();
-        $("#div3").hide();
-    })
     /*BOTON MOSTRAR*/ 
     $("#btnMostrar").click(function(){
         $("#div1").show();
         $("#div2").show();
         $("#div3").show();
+    })
+    /*BOTON ESCONDER*/ 
+    $("#btnEsconder").click(function(){
+        $("#div1").hide();
+        $("#div2").hide();
+        $("#div3").hide();
     })
 
 
